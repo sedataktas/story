@@ -40,7 +40,7 @@ related problem.
     
 -  I used **go.mod** for dependency management.
 
-###First Assignment
+### First Assignment
 
  - In this assignment you can send GET request with *app_token* as parameter 
 and get stories information about application. 
@@ -79,7 +79,7 @@ and get stories information about application.
 }
 ```
 
-###Second Assignment
+### Second Assignment
 
 - Firstly, I used gin. Because it provides some convenience. But then
 I used native net/http package for better performance. 
@@ -94,7 +94,7 @@ I used native net/http package for better performance.
 
 - Gin Results :
 
-<p align="center"><img src="https://raw.githubusercontent.com/sedataktas/story/main/screenshots/ab-test-with-gin.png?raw=true"/></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/51915561/107142881-e07d5400-6942-11eb-8469-688b4cd32350.png?raw=true"/></p>
 
 - Again, at the beginning, I reach to db 2 times. First to check app token exists. Second
 is to take metadatas. I also check is app token exist in second query but with first query
@@ -106,12 +106,12 @@ to token.
 
 - net/http, 1 reach to db and with app_token index results: 
 
-<p align="center"><img src="https://raw.githubusercontent.com/sedataktas/story/main/screenshots/ab-test-with-net/http.png?raw=true"/></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/51915561/107142857-a9a73e00-6942-11eb-99a9-3f46d3dc0c50.png?raw=true"/></p>
 
 
 - Additionally, if there are not many applications, tokens can be store memory.
 
-###Third Assignment
+### Third Assignment
 
 - In this assignment api take *POST* request if there is a record matching the values
 in request body, record's count increments 1. If there is no record  matching the values
